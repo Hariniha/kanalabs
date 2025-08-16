@@ -13,7 +13,7 @@ const HeroSection = () => {
               <span className="text-white font-[500]">CEX-like performance</span>
             </h1>
           </div>
-          <div className="flex flex-row sm:flex-row justify-center items-center gap-4 md:gap-8 pt-8 md:pt-0 w-full">
+          <div className="flex flex-row sm:flex-row   gap-4 md:gap-8 pt-8 md:pt-0 w-full">
             <div className="flex flex-col items-center p-4 bg-transparent rounded-lg">
               <div className="text-white text-lg sm:text-xl md:text-2xl font-extrabold">2 Million+</div>
               <div className="text-[#A5A5A6] text-sm sm:text-base md:text-[14px] font-normal">transactions</div>

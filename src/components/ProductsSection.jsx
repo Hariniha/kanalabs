@@ -17,7 +17,7 @@ const ProductsSection = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  // Horizontal translation for cards (even slower scroll)
+  // Horizontal translation for cards
   const translateX = `-${progress * 25}%`;
 
   return (

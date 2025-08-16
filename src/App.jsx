@@ -8,7 +8,7 @@ import Footer from './components/Footer';
 
 function App() {
   return (
-    <div className="min-h-screen bg-gray-900 bg-[#060C0F]  no-scrollbar" >
+    <div className="bg-[#060C0F] overflow-x-hidden">
       <Header />
       <HeroSection />
       <ProductsSection />

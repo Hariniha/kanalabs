@@ -17,12 +17,12 @@ const ProductsSection = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  // Horizontal translation for cards
-  const translateX = `-${progress * 100}%`;
+  // Horizontal translation for cards (even slower scroll)
+  const translateX = `-${progress * 25}%`;
 
   return (
-    <div className="h-full px-0 -mx-4">
-      <section ref={sectionRef} className="relative lg:h-[400vh] h-auto">
+    <div className=" px-0 -mx-4">
+      <section ref={sectionRef} className="relative  ">
         <div className="sticky top-0 flex flex-col justify-center h-auto my-auto overflow-hidden xxl:h-screen sxl:h-screen xl:h-screen bxl:h-screen lg:h-screen">
           <div className="pl-4 lg:pl-[120px]">
             <div className="flex items-center gap-4 mb-6 overflow-auto">

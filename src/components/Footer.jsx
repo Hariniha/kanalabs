@@ -1,7 +1,7 @@
 import React from "react";
 
 const Footer = () => (
-  <footer className="bg-[#060C0F] text-white xxl:pt-[70px] sxl:pt-[70px] xl:pt-[70px] bxl:pt-[70px] lg:pt-[70px] md:pt-[20px] sm:pt-[20px] xd:pt-[20px] pb-8 px-12 border-t border-[#2C2D30] relative z-10 ">
+  <footer className="bg-[#060C0F] text-white xxl:pt-[70px] sxl:pt-[70px] xl:pt-[70px] bxl:pt-[70px] lg:pt-[70px] md:pt-[20px] sm:pt-[20px] xd:pt-[20px] pb-8 px-12 border-t border-[#2C2D30] relative z-10" style={{ fontFamily: "urbanist" }}>
     <div className="mx-auto overflow-hidden flex flex-col lg:flex-row justify-between md:mb-36 mb-10 relative">
       <div className="block mr-4 2xl:w-2/3 lg:w-1/3 w-3/3 xxl:inline sxl:inline bxl:inline xl:inline lg:inline md:hidden sm:hidden xd:hidden">
         <a href="https://kanalabs.io/" target="_blank" rel="noopener noreferrer"><img src="https://app.kanalabs.io/_next/static/media/Kana-Logo.afc11a9c.svg" className="w-40" alt="logo" /></a>

@@ -2,7 +2,7 @@
 import React from "react";
 
 const Header = () => (
-  <header className="backdrop-blur-[50px] flex items-center justify-between xxl:px-12 xl:px-12 sxl:px-12 bxl:px-12 lg:px-12 md:px-4 sm:px-4 xd:px-4 py-2 bg-[#1d1e201a] fixed top-0 left-1/2 transform -translate-x-1/2 w-full h-min z-[2] overflow-visible">
+  <header className="backdrop-blur-[50px] flex items-center justify-between 2xl:px-12 xl:px-12 lg:px-12 md:px-4 sm:px-4 py-2 bg-[#1d1e201a] fixed top-0 left-1/2 transform -translate-x-1/2 w-full h-min z-[2] overflow-visible" style={{ fontFamily: "urbanist" }}>
     <div className="hidden md:block">
       <img
         src="https://app.kanalabs.io/_next/static/media/Kana-Logo.afc11a9c.svg"
@@ -36,11 +36,13 @@ const Header = () => (
       </div>
       <a
         className="flex items-center justify-center text-[#0C0C0D] text-xs font-extrabold bg-[#00FFF0] rounded-[1rem] h-[2.5rem] gap-2 px-4 shadow-md border-[0.063rem] border-[#008181] hover:text-black hover:shadow-[0px_4px_8px_rgba(0,_0,_0,_0.25)] hover:line-height-[24px]"
+      
         href="https://www.kana.trade/"
         style={{
-          fontFamily: "Manrope",
+          
           lineHeight: "18px",
           overflowWrap: "break-word",
+          fontFamily: "urbanist",
         }}
         target="_blank"
         rel="noopener noreferrer"

@@ -3,7 +3,7 @@ import React from 'react'
 const DeveloperSection = () => {
   return (
     <div>{/* Devs Section */}
-            <div className="mb-32 h-full py-16 -mx-4">
+            <div className="mb-8 h-full py-8 -mx-4">
               <div className="pl-4 lg:pl-[120px]">
                 <h1 className="text-[#FFFFFF] font-bold text-[28px] mb-6 relative" style={{ fontFamily: "Urbanist" }}>For the Devs</h1>
               </div>

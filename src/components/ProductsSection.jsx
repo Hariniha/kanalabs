@@ -87,7 +87,7 @@ const ProductsSection = () => {
                     </div>
                     <div className="flex-1 w-full h-full">
                       <div className="lg:w-[330px] lg:h-[270px] w-[250px] h-[240px]">
-                        <img src="/assets/cardImage4-2FLKGXCk.png" alt="" className="w-full h-full" />
+                        <img src="src/assests/perhaps.png" alt="perhaps" className="w-full h-full" />
                       </div>
                     </div>
                     <a className="w-full border border-[#FFFFFF1A] font-extrabold text-sm py-4 px-6 rounded-2xl block lg:hidden text-center" href="https://www.kana.trade/" style={{background: 'linear-gradient(99.48deg, rgb(125, 255, 253) -15.26%, rgb(89, 185, 255) 117.67%)'}}>Try Perps</a>

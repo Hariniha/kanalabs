@@ -36,7 +36,7 @@ const ProductsSection = () => {
                   className="hover:bg-[#ffffff0f] rounded-[0.5rem] h-[2rem] flex justify-center items-center align-middle"
                 >
                   <img
-                    src="/src/assets/icon.png"
+                    src="/assets/icon.png"
                     alt="Perps link"
                     className="xxl:w-[2rem] sxl:w-[2rem] xl:w-[2rem] lg:w-[2rem] md:w-[1rem] xd:w-[1rem] sm:w-[1rem] h-[2rem] xxl:mb-0 sxl:mb-0 bxl:mb-0 xl:mb-0 lg:mb-0 md:mb-1 xd:mb-1 sm:mb-1"
                   />
@@ -52,7 +52,7 @@ const ProductsSection = () => {
                   className="hover:bg-[#ffffff0f] rounded-[0.5rem] h-[2rem] flex justify-center items-center align-middle"
                 >
                   <img
-                    src="/src/assets/icon.png"
+                    src="/assets/icon.png"
                     alt="Swap link"
                     className="xxl:w-[2rem] sxl:w-[2rem] xl:w-[2rem] lg:w-[2rem] md:w-[1rem] xd:w-[1rem] sm:w-[1rem] h-[2rem] xxl:mb-0 sxl:mb-0 bxl:mb-0 xl:mb-0 lg:mb-0 md:mb-1 xd:mb-1 sm:mb-1"
                   />
@@ -80,14 +80,14 @@ const ProductsSection = () => {
                     </div>
                     <div className="flex-1 w-full h-full">
                       <div className="lg:w-[330px] lg:h-[270px] w-[250px] h-[240px]">
-                        <img src="/src/assets/perhaps.png" alt="perhaps" className="w-full h-full" />
+                        <img src="/assets/perhaps.png" alt="perhaps" className="w-full h-full" />
                       </div>
                     </div>
                     <a className="w-full border border-[#FFFFFF1A] font-extrabold text-sm py-4 px-6 rounded-2xl block lg:hidden text-center" href="https://www.kana.trade/" style={{background: 'linear-gradient(99.48deg, rgb(125, 255, 253) -15.26%, rgb(89, 185, 255) 117.67%)'}}>Try Perps</a>
                   </div>
                 </div>
                 <div className="absolute inset-0 z-0 pointer-events-none">
-                  <img src="/src/assets/cardGraphic3.png" alt="" className="w-full h-full bg-cover" />
+                  <img src="/assets/cardGraphic3.png" alt="" className="w-full h-full bg-cover" />
                 </div>
               </div>
               {/* Swap Card */}
@@ -103,14 +103,14 @@ const ProductsSection = () => {
                     </div>
                     <div className="flex-1 w-full h-full">
                       <div className="lg:w-[330px] lg:h-[270px] w-[250px] h-[240px]">
-                        <img src="/src/assets/swap.png" alt="" className="w-full h-full" />
+                        <img src="/assets/swap.png" alt="" className="w-full h-full" />
                       </div>
                     </div>
                     <a className="w-full border border-[#FFFFFF1A] font-extrabold text-sm py-4 px-6 rounded-2xl block lg:hidden text-center" href="https://app.kanalabs.io/swap" style={{background: 'linear-gradient(99.48deg, rgb(125, 255, 253) -15.26%, rgb(89, 185, 255) 117.67%)'}}>Try Swap</a>
                   </div>
                 </div>
                 <div className="absolute inset-0 z-0 pointer-events-none">
-                  <img src="/src/assets/cardGraphic2.png" alt="" className="w-full h-full bg-cover" />
+                  <img src="/assets/cardGraphic2.png" alt="" className="w-full h-full bg-cover" />
                 </div>
               </div>
             </div>

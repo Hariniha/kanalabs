@@ -17,7 +17,7 @@ const DeveloperSection = () => {
                     <div className=" lg:hidden inline-flex justify-center items-center align-middle text-center text-[1.5rem] break-words">Explore Kana Build for cutting-edge blockchain integration</div>
                     <a className="w-fit border border-[#FFFFFF1A] font-extrabold text-sm py-4 px-6 rounded-2xl lg:block  text-[#1D1E20]" href="https://www.kanalabs.build/" style={{background: "linear-gradient(99.48deg, rgb(125, 255, 253) -15.26%, rgb(89, 185, 255) 117.67%)"}}>Visit Kana Labs Build</a>
                   </div>
-                  <div><img src="/src/assets/build.png" alt="DevImage" className=" absolute lg:h-[650px] lg:right-[-7rem] opacity-80 lg:mt-[-16rem] md:mt-[-8rem] xd:mt-[-1rem] sm:mt-[-1rem] " /></div>
+                  <div><img src="/assets/build.png" alt="DevImage" className=" absolute lg:h-[650px] lg:right-[-7rem] opacity-80 lg:mt-[-16rem] md:mt-[-8rem] xd:mt-[-1rem] sm:mt-[-1rem] " /></div>
                 </div>
               </div>
             </div></div>

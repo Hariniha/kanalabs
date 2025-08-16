@@ -8,7 +8,7 @@ import Footer from './components/Footer';
 
 function App() {
   return (
-    <div className="min-h-screen bg-gray-900 bg-[#060C0F] px-4 no-scrollbar" style={{ fontFamily: "Manrope" }}>
+    <div className="min-h-screen bg-gray-900 bg-[#060C0F]  no-scrollbar" style={{ fontFamily: "Manrope" }}>
       <Header />
       <HeroSection />
       <ProductsSection />

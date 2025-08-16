@@ -56,7 +56,7 @@ const Footer = () => (
         </div>
       </div>
     </div>
-    <img src="data:image/svg+xml,%3csvg%20width='761'%20height='400'%20viewBox='0%200%20761%20400'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cg%20opacity='0.5'%20filter='url(%23filter0_f_729_1898)'%3e%3cellipse%20cx='138.5'%20cy='400'%20rx='222.5'%20ry='84'%20fill='url(%23paint0_linear_729_1898)'/%3e%3c/g%3e%3cdefs%3e%3cfilter%20id='filter0_f_729_1898'%20x='-484'%20y='-84'%20width='1245'%20height='968'%20filterUnits='userSpaceOnUse'%20color-interpolation-filters='sRGB'%3e%3cfeFlood%20flood-opacity='0'%20result='BackgroundImageFix'/%3e%3cfeBlend%20mode='normal'%20in='SourceGraphic'%20in2='BackgroundImageFix'%20result='shape'/%3e%3cfeGaussianBlur%20stdDeviation='200'%20result='effect1_foregroundBlur_729_1898'/%3e%3c/filter%3e%3clinearGradient%20id='paint0_linear_729_1898'%20x1='-84'%20y1='400'%20x2='361'%20y2='400'%20gradientUnits='userSpaceOnUse'%3e%3cstop%20stop-color='%234F9DFF'/%3e%3cstop%20offset='1'%20stop-color='%2367FFD1'/%3e%3c/linearGradient%3e%3c/defs%3e%3c/svg%3e" alt="Ellipse" className=" absolute bottom-0 left-0 h-full z-[-1]" />
+    {/* <img src="" alt="Ellipse" className=" w-full h-full z-[-1]" /> */}
     <div className="flex justify-between mt-4 pt-6 text-[#7D8595] text-center font-normal text-xs relative">
       <div className="w-full flex md:flex-row flex-col items-center justify-between">
         <div className="block mr-4 2xl:w-2/3 lg:w-1/3 w-3/3 xxl:hidden sxl:hidden bxl:hidden xl:hidden lg:hidden md:inline sm:inline xd:inline">

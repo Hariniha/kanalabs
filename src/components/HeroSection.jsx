@@ -2,7 +2,8 @@ import React from 'react'
 
 const HeroSection = () => {
   return (
-    <div><div className="xxl:mx-24 xl:mx-24 sxl:mx-24 bxl:mx-24 lg:mx-24 md:mx-10 sm:mx-0 xd:mx-0 flex flex-col justify-between h-screen">
+    <div>
+      <div className="xxl:mx-24 xl:mx-24 sxl:mx-24 bxl:mx-24 lg:mx-24 md:mx-10 sm:mx-0 xd:mx-0 flex flex-col justify-between h-screen">
         <div></div>
         <div className="xxl:mb-8 sxl:mb-8 xl:mb-8 lg:mb-8 bxl:mb-8 md:mb-20 sm:mb-20 xd:mb-20">
           <div className="flex xxl:justify-normal lg:p-0 p-2 sxl:justify-normal bxl:justify-normal xl:justify-normal lg:justify-normal md:justify-normal sm:justify-center xd:justify-center">

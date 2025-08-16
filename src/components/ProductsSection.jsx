@@ -17,8 +17,8 @@ const ProductsSection = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  // Horizontal translation for cards (even slower scroll)
-  const translateX = `-${progress * 25}%`;
+  // Horizontal translation for cards (gentle, slow scroll)
+  const translateX = `-${progress * 8}%`;
 
   return (
     <div className=" px-0 -mx-4">
@@ -59,31 +59,32 @@ const ProductsSection = () => {
                 </a>
               </div>
             </div>
-          
+
           </div>
           {/* Cards Section */}
-          <div className="items-center hidden overflow-auto xxl:flex-row sxl:flex-row bxl:flex-row xl:flex-row lg:flex-row md:flex-row sm:flex-col xd:flex-col lg:overflow-hidden xxl:inline-flex xl:inline-flex sxl:inline-flex bxl:inline-flex lg:inline-flex">
+          {/* Desktop/Tablet: horizontal cards */}
+          <div className="items-center hidden md:flex overflow-auto xxl:flex-row sxl:flex-row bxl:flex-row xl:flex-row lg:flex-row md:flex-row lg:overflow-hidden xxl:inline-flex xl:inline-flex sxl:inline-flex bxl:inline-flex lg:inline-flex">
             <div
-              className="flex xxl:flex-row sxl:flex-row bxl:flex-row xl:flex-row lg:flex-row md:flex-row sm:flex-col xd:flex-col gap-4 pl-0 lg:pl-[120px] transition-transform duration-300"
+              className="flex xxl:flex-row sxl:flex-row bxl:flex-row xl:flex-row lg:flex-row md:flex-row gap-4 pl-0 lg:pl-[120px] transition-transform duration-700 ease-out"
               style={{ transform: `translateX(${translateX})` }}
             >
               {/* Perps Card */}
-               <div className="relative lg:w-[800px] xxl:w-[800px] sxl:w-[800px] xl:w-[800px] bxl:w-[800px] md:w-[400px] xd:w-auto sm:w-auto max-h-[430px] flex-shrink-0 overflow-hidden border border-[#F5F7FA0F] hover:bg-[#17181A80] rounded-2xl" style={{background: "linear-gradient(135deg, rgba(245, 247, 250, 0.06) 0%, rgba(245, 247, 250, 0) 100%)", backdropFilter: "blur(108.731px)", boxShadow: "rgba(9, 13, 20, 0.12) 0px 4px 4px 0px"}}>
+              <div className="relative lg:w-[800px] xxl:w-[800px] sxl:w-[800px] xl:w-[800px] bxl:w-[800px] md:w-[400px] max-h-[430px] flex-shrink-0 overflow-hidden border border-[#F5F7FA0F] hover:bg-[#17181A80] rounded-2xl" style={{ background: "linear-gradient(135deg, rgba(245, 247, 250, 0.06) 0%, rgba(245, 247, 250, 0) 100%)", backdropFilter: "blur(108.731px)", boxShadow: "rgba(9, 13, 20, 0.12) 0px 4px 4px 0px" }}>
                 <div className="relative z-10 w-full h-full">
                   <div className="flex flex-col items-center w-full gap-4 p-4 lg:flex-row lg:p-16 lg:h-full text-start">
                     <div className="flex-1 w-full space-y-4">
                       <div className="lg:h-auto h-[54px]">
-                        <h1 className="text-white font-bold lg:text-[28px] text-base lg:mb-2" style={{fontFamily: 'Urbanist'}}>Perps</h1>
+                        <h1 className="text-white font-bold lg:text-[28px] text-base lg:mb-2" style={{ fontFamily: 'Urbanist' }}>Perps</h1>
                         <p className="text-[#A5A5A6] font-normal lg:text-xs text-[10px]">Perpetual futures, limitless opportunities</p>
                       </div>
-                      <a className="w-fit border border-[#FFFFFF1A] font-extrabold text-sm py-4 px-6 rounded-2xl lg:block hidden" href="https://www.kana.trade/" style={{background: 'linear-gradient(99.48deg, rgb(125, 255, 253) -15.26%, rgb(89, 185, 255) 117.67%)'}}>Try Perps</a>
+                      <a className="w-fit border border-[#FFFFFF1A] font-extrabold text-sm py-4 px-6 rounded-2xl lg:block hidden" href="https://www.kana.trade/" style={{ background: 'linear-gradient(99.48deg, rgb(125, 255, 253) -15.26%, rgb(89, 185, 255) 117.67%)' }}>Try Perps</a>
                     </div>
                     <div className="flex-1 w-full h-full">
                       <div className="lg:w-[330px] lg:h-[270px] w-[250px] h-[240px]">
                         <img src="/assets/perhaps.png" alt="perhaps" className="w-full h-full" />
                       </div>
                     </div>
-                    <a className="w-full border border-[#FFFFFF1A] font-extrabold text-sm py-4 px-6 rounded-2xl block lg:hidden text-center" href="https://www.kana.trade/" style={{background: 'linear-gradient(99.48deg, rgb(125, 255, 253) -15.26%, rgb(89, 185, 255) 117.67%)'}}>Try Perps</a>
+                    <a className="w-full border border-[#FFFFFF1A] font-extrabold text-sm py-4 px-6 rounded-2xl block lg:hidden text-center" href="https://www.kana.trade/" style={{ background: 'linear-gradient(99.48deg, rgb(125, 255, 253) -15.26%, rgb(89, 185, 255) 117.67%)' }}>Try Perps</a>
                   </div>
                 </div>
                 <div className="absolute inset-0 z-0 pointer-events-none">
@@ -91,27 +92,70 @@ const ProductsSection = () => {
                 </div>
               </div>
               {/* Swap Card */}
-              <div className="relative lg:w-[800px] xxl:w-[800px] sxl:w-[800px] xl:w-[800px] bxl:w-[800px] md:w-[400px] xd:w-auto sm:w-auto max-h-[430px] flex-shrink-0 overflow-hidden border border-[#F5F7FA0F] hover:bg-[#17181A80] rounded-2xl" style={{background: "linear-gradient(135deg, rgba(245, 247, 250, 0.06) 0%, rgba(245, 247, 250, 0) 100%)", backdropFilter: "blur(108.731px)", boxShadow: "rgba(9, 13, 20, 0.12) 0px 4px 4px 0px"}}>
+              <div className="relative lg:w-[800px] xxl:w-[800px] sxl:w-[800px] xl:w-[800px] bxl:w-[800px] md:w-[400px] max-h-[430px] flex-shrink-0 overflow-hidden border border-[#F5F7FA0F] hover:bg-[#17181A80] rounded-2xl" style={{ background: "linear-gradient(135deg, rgba(245, 247, 250, 0.06) 0%, rgba(245, 247, 250, 0) 100%)", backdropFilter: "blur(108.731px)", boxShadow: "rgba(9, 13, 20, 0.12) 0px 4px 4px 0px" }}>
                 <div className="relative z-10 w-full h-full">
                   <div className="flex flex-col items-center w-full gap-4 p-4 lg:flex-row lg:p-16 lg:h-full text-start">
                     <div className="flex-1 w-full space-y-4">
                       <div className="lg:h-auto h-[54px]">
-                        <h1 className="text-white font-bold lg:text-[28px] text-base lg:mb-2" style={{fontFamily: 'Urbanist'}}>Swap</h1>
+                        <h1 className="text-white font-bold lg:text-[28px] text-base lg:mb-2" style={{ fontFamily: 'Urbanist' }}>Swap</h1>
                         <p className="text-[#A5A5A6] font-normal lg:text-xs text-[10px]">Swaps tokens across 9+ EVM & Non-EVM Chains</p>
                       </div>
-                      <a className="w-fit border border-[#FFFFFF1A] font-extrabold text-sm py-4 px-6 rounded-2xl lg:block hidden" href="https://app.kanalabs.io/swap" style={{background: 'linear-gradient(99.48deg, rgb(125, 255, 253) -15.26%, rgb(89, 185, 255) 117.67%)'}}>Try Swap</a>
+                      <a className="w-fit border border-[#FFFFFF1A] font-extrabold text-sm py-4 px-6 rounded-2xl lg:block hidden" href="https://app.kanalabs.io/swap" style={{ background: 'linear-gradient(99.48deg, rgb(125, 255, 253) -15.26%, rgb(89, 185, 255) 117.67%)' }}>Try Swap</a>
                     </div>
                     <div className="flex-1 w-full h-full">
                       <div className="lg:w-[330px] lg:h-[270px] w-[250px] h-[240px]">
                         <img src="/assets/swap.png" alt="" className="w-full h-full" />
                       </div>
                     </div>
-                    <a className="w-full border border-[#FFFFFF1A] font-extrabold text-sm py-4 px-6 rounded-2xl block lg:hidden text-center" href="https://app.kanalabs.io/swap" style={{background: 'linear-gradient(99.48deg, rgb(125, 255, 253) -15.26%, rgb(89, 185, 255) 117.67%)'}}>Try Swap</a>
+                    <a className="w-full border border-[#FFFFFF1A] font-extrabold text-sm py-4 px-6 rounded-2xl block lg:hidden text-center" href="https://app.kanalabs.io/swap" style={{ background: 'linear-gradient(99.48deg, rgb(125, 255, 253) -15.26%, rgb(89, 185, 255) 117.67%)' }}>Try Swap</a>
                   </div>
                 </div>
                 <div className="absolute inset-0 z-0 pointer-events-none">
                   <img src="/assets/cardGraphic2.png" alt="" className="w-full h-full bg-cover" />
                 </div>
+              </div>
+            </div>
+          </div>
+          {/* Mobile: vertical cards */}
+          <div className="flex flex-col gap-6 md:hidden w-full px-4 pt-8">
+            {/* Perps Card */}
+            <div className="relative w-full max-w-xl mx-auto max-h-[430px] flex-shrink-0 overflow-hidden border border-[#F5F7FA0F] hover:bg-[#17181A80] rounded-2xl" style={{ background: "linear-gradient(135deg, rgba(245, 247, 250, 0.06) 0%, rgba(245, 247, 250, 0) 100%)", backdropFilter: "blur(108.731px)", boxShadow: "rgba(9, 13, 20, 0.12) 0px 4px 4px 0px" }}>
+              <div className="relative z-10 w-full h-full">
+                <div className="flex flex-col items-center w-full gap-4 p-4 text-center">
+                  <div className="w-full space-y-4">
+                    <div className="h-[54px]">
+                      <h1 className="text-white font-bold text-xl mb-2" style={{ fontFamily: 'Urbanist' }}>Perps</h1>
+                      <p className="text-[#A5A5A6] font-normal text-xs">Perpetual futures, limitless opportunities</p>
+                    </div>
+                    <a className="w-full border border-[#FFFFFF1A] font-extrabold text-sm py-4 px-6 rounded-2xl block text-center" href="https://www.kana.trade/" style={{ background: 'linear-gradient(99.48deg, rgb(125, 255, 253) -15.26%, rgb(89, 185, 255) 117.67%)' }}>Try Perps</a>
+                  </div>
+                  <div className="w-full h-[200px] flex items-center justify-center">
+                    <img src="/assets/perhaps.png" alt="perhaps" className="w-auto h-full" />
+                  </div>
+                </div>
+              </div>
+              <div className="absolute inset-0 z-0 pointer-events-none">
+                <img src="/assets/cardGraphic3.png" alt="" className="w-full h-full bg-cover" />
+              </div>
+            </div>
+            {/* Swap Card */}
+            <div className="relative w-full max-w-xl mx-auto max-h-[430px] flex-shrink-0 overflow-hidden border border-[#F5F7FA0F] hover:bg-[#17181A80] rounded-2xl" style={{ background: "linear-gradient(135deg, rgba(245, 247, 250, 0.06) 0%, rgba(245, 247, 250, 0) 100%)", backdropFilter: "blur(108.731px)", boxShadow: "rgba(9, 13, 20, 0.12) 0px 4px 4px 0px" }}>
+              <div className="relative z-10 w-full h-full">
+                <div className="flex flex-col items-center w-full gap-4 p-4 text-center">
+                  <div className="w-full space-y-4">
+                    <div className="h-[54px]">
+                      <h1 className="text-white font-bold text-xl mb-2" style={{ fontFamily: 'Urbanist' }}>Swap</h1>
+                      <p className="text-[#A5A5A6] font-normal text-xs">Swaps tokens across 9+ EVM & Non-EVM Chains</p>
+                    </div>
+                    <a className="w-full border border-[#FFFFFF1A] font-extrabold text-sm py-4 px-6 rounded-2xl block text-center" href="https://app.kanalabs.io/swap" style={{ background: 'linear-gradient(99.48deg, rgb(125, 255, 253) -15.26%, rgb(89, 185, 255) 117.67%)' }}>Try Swap</a>
+                  </div>
+                  <div className="w-full h-[200px] flex items-center justify-center">
+                    <img src="/assets/swap.png" alt="swap" className="w-auto h-full" />
+                  </div>
+                </div>
+              </div>
+              <div className="absolute inset-0 z-0 pointer-events-none">
+                <img src="/assets/cardGraphic2.png" alt="" className="w-full h-full bg-cover" />
               </div>
             </div>
           </div>

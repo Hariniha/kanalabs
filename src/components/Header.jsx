@@ -6,20 +6,20 @@ const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   return (
     <header className="backdrop-blur-[50px] flex items-center justify-between 2xl:px-12 xl:px-12 lg:px-12 md:px-4 sm:px-4 py-2 bg-[#1d1e201a] fixed top-0 left-1/2 transform -translate-x-1/2 w-full h-min z-[2] overflow-visible" style={{ fontFamily: "urbanist" }}>
-      <div className="hidden md:block">
+      <div className="hidden md:block pl-8 pr-2">
         <img
           src="https://app.kanalabs.io/_next/static/media/Kana-Logo.afc11a9c.svg"
           alt="Kana Labs Logo"
         />
       </div>
-      <div className="block md:hidden cursor-pointer" onClick={() => setMenuOpen(!menuOpen)}>
+      <div className="block md:hidden cursor-pointer pl-4" onClick={() => setMenuOpen(!menuOpen)}>
         <img
           src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20width='26'%20height='34'%20viewBox='0%200%2026%2034'%20fill='none'%3e%3cg%20id='Logo'%3e%3cg%20id='Group%206'%3e%3cpath%20id='Ellipse%2054'%20d='M16.7905%201.70828C16.7905%201.14052%2016.3298%200.67689%2015.7632%200.71263C13.9714%200.825646%2012.2082%201.23371%2010.5452%201.92253C8.56518%202.74268%206.7661%203.94479%205.25067%205.46023C3.73523%206.97566%202.53312%208.77474%201.71297%2010.7548C0.892827%2012.7348%200.470703%2014.8569%200.470703%2017.0001C0.470703%2019.1432%200.892828%2021.2654%201.71298%2023.2454C2.53312%2025.2254%203.73523%2027.0245%205.25067%2028.5399C6.7661%2030.0554%208.56519%2031.2575%2010.5452%2032.0776C12.2082%2032.7664%2013.9714%2033.1745%2015.7632%2033.2875C16.3298%2033.3233%2016.7905%2032.8596%2016.7905%2032.2919L16.7905%201.70828Z' fill='url(%23paint0_linear_2074_8642)'/%3e%3cpath%20id='Ellipse%2055'%20d='M25.5284%205.04973C25.5284%204.48197%2025.0673%204.0173%2024.5014%204.06403C21.5034%204.31163%2018.6753%205.63727%2016.5328%207.8231C14.147%2010.2571%2012.8066%2013.5583%2012.8066%2017.0005C12.8066%2020.4426%2014.147%2023.7438%2016.5328%2026.1778C18.6753%2028.3636%2021.5034%2029.6893%2024.5014%2029.9369C25.0673%2029.9836%2025.5284%2029.5189%2025.5284%2028.9512V5.04973Z' fill='url(%23paint1_linear_2074_8642)'/%3e%3c/g%3e%3c/g%3e%3cdefs%3e%3clinearGradient%20id='paint0_linear_2074_8642'%20x1='0.272802'%20y1='36.7496'%20x2='25.8135'%20y2='-3.39804'%20gradientUnits='userSpaceOnUse'%3e%3cstop%20stop-color='%230194FF'/%3e%3cstop%20offset='1'%20stop-color='%231FF8D1'/%3e%3c/linearGradient%3e%3clinearGradient%20id='paint1_linear_2074_8642'%20x1='12.6524'%20y1='32.6888'%20x2='33.1007'%20y2='1.14615'%20gradientUnits='userSpaceOnUse'%3e%3cstop%20stop-color='%230194FF'/%3e%3cstop%20offset='1'%20stop-color='%231FF8D1'/%3e%3c/linearGradient%3e%3c/defs%3e%3c/svg%3e"
           alt="Kana Labs Logo Mobile"
         />
       </div>
       {/* Desktop Nav */}
-      <div className="flex items-center gap-4 ml-2 md:ml-6">
+      <div className="flex items-center gap-4 ml-2 md:ml-6 pr-2">
         <div className="md:flex hidden items-center gap-10 mr-8  !outline-none">
           <a
             className="text-[#FFFFFFCC] hover:text-[#FFFFFFCC] text-sm font-bold"
@@ -39,7 +39,7 @@ const Header = () => {
           </a>
         </div>
         <a
-          className="flex items-center justify-center text-[#0C0C0D] text-xs font-extrabold bg-[#00FFF0] rounded-[1rem] h-[2.5rem] gap-2 px-4 shadow-md border-[0.063rem] border-[#008181] hover:text-black hover:shadow-[0px_4px_8px_rgba(0,_0,_0,_0.25)] hover:line-height-[24px]"
+          className="flex items-center justify-center text-[#0C0C0D] text-xs font-extrabold bg-[#00FFF0] rounded-[1rem] h-[2.5rem] gap-2 px-4 shadow-md border-[0.063rem] border-[#008181] hover:text-black hover:shadow-[0px_4px_8px_rgba(0,_0,_0,_0.25)] hover:line-height-[24px] ml-2 md:ml-4 mr-4"
           href="https://www.kana.trade/"
           style={{
             lineHeight: "18px",
